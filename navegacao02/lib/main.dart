@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
                         builder: (context) => const SegundaTela()),
                   );
                 },
-                child: const Text("Or para a Tela Secundária 1"),
+                child: const Text("Ir para a Tela Secundária 1"),
               ),
               const SizedBox(height: 20),
               ElevatedButton(
