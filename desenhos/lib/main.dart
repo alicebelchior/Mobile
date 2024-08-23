@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'menu.dart';
 
 void main() {
 	runApp(const MyApp());
@@ -34,7 +35,7 @@ class ImageListScreen extends StatelessWidget {
       
 	  appBar: AppBar(
         title: const Center(
-          child: Text('?? Mxyzptlk ??'),
+          child: Text('MONSTROS DE FILME DE TERROR'),
         ),
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
@@ -61,7 +62,7 @@ class ImageListScreen extends StatelessWidget {
 										Navigator.push(
 											context,
 											MaterialPageRoute(
-												builder: (context) => const SecondScreen(),
+												builder: (context) => const Menu(),
 											),
 										);
 									},
@@ -71,7 +72,7 @@ class ImageListScreen extends StatelessWidget {
 
 											// Alinha a imagem à esquerda dentro do espaço disponível
 											Image.asset(
-												'lib/img/imagem0.jpg',
+												'lib/img/gif.gif',
 												width: imagemWidth,
 											),
 
@@ -81,7 +82,7 @@ class ImageListScreen extends StatelessWidget {
 											// Alinha o texto à direita dentro do espaço restante
 											const Expanded(
 											child: Text(
-													'Mr. Mxyzptlk',
+													'CLIQUE SE TIVER CORAGEM',
 													textAlign: TextAlign.right,
 												),
 											),
@@ -91,30 +92,6 @@ class ImageListScreen extends StatelessWidget {
 							),
 						],
 					),
-				),
-			),
-		);
-	}
-}
-
-
-
-class SecondScreen extends StatelessWidget {
-const SecondScreen({super.key});
-
-	@override
-	Widget build(BuildContext context) {
-
-	return Scaffold(
-			appBar: AppBar(
-				title: const Text('Segunda tela'),
-					backgroundColor: Colors.black,
-					foregroundColor: Colors.white,
-			),
-
-			body: Center(
-				child: Image.asset(
-					'lib/imagens/imagem0.jpg',
 				),
 			),
 		);
