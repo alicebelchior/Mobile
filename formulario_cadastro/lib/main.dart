@@ -45,80 +45,81 @@ class _MyCustomFormState extends State<MyCustomForm> {
       children: <Widget>[
         const Text('Nome'),
         TextFormField(
-
-
           decoration: const InputDecoration(
             border: OutlineInputBorder(),
           ),
         ),
         const SizedBox(height: 20),
 
-
         const Text('Atividades:'),
-        Row(
-          children: <Widget>[
-            Checkbox(
-              value: checkbox1Value,
-              onChanged: (bool? value) {
-                setState(() {
-                  checkbox1Value = value!;
-                });
-              },
-            ),
-            const Text('Estudar'),
+        Row(children: <Widget>[
+          Checkbox(
+            value: checkbox1Value,
+            onChanged: (bool? value) {
+              setState(() {
+                checkbox1Value = value!;
+              });
+            },
+          ),
+          const Text('Estudar'),
+        ]),
 
-            Checkbox(
-              value: checkbox1Value,
-              onChanged: (bool? value) {
-                setState(() {
-                  checkbox2Value = value!;
-                });
-              },
-            ),
-            const Text('Dormir'),
+        Row(children: <Widget>[
+          Checkbox(
+            value: checkbox1Value,
+            onChanged: (bool? value) {
+              setState(() {
+                checkbox2Value = value!;
+              });
+            },
+          ),
+          const Text('Dormir'),
+        ]),
 
-            Checkbox(
-              value: checkbox1Value,
-              onChanged: (bool? value) {
-                setState(() {
-                  checkbox3Value = value!;
-                });
-              },
-            ),
-            const Text('Comer'),
+        Row(children: <Widget>[
+          Checkbox(
+            value: checkbox1Value,
+            onChanged: (bool? value) {
+              setState(() {
+                checkbox3Value = value!;
+              });
+            },
+          ),
+          const Text('Comer'),
+        ]),
 
-            Checkbox(
-              value: checkbox1Value,
-              onChanged: (bool? value) {
-                setState(() {
-                  checkbox4Value = value!;
-                });
-              },
-            ),
-            const Text('Trabalhar'),
-
-          ] 
-        ),  
+        Row(children: <Widget>[
+          Checkbox(
+            value: checkbox1Value,
+            onChanged: (bool? value) {
+              setState(() {
+                checkbox4Value = value!;
+              });
+            },
+          ),
+          const Text('Trabalhar'),
+        ]),
         const SizedBox(height: 20),
 
-        const Text('Opções'),
+
+      const Text('Opções'),
+        Row(children: <Widget>[
+          Radio<String>(
+            value: '',
+            groupValue: radio1,
+            onChanged: (String? value) {
+              setState(() {
+                radio1 = value!;
+              });
+            },
+          ),
+          const Text('Churrasco'),
+        ]),
+
         Row(
           children: <Widget>[
-
             Radio<String>(
-              value: 'Churrasco',
-              groupValue: radio1,
-              onChanged: (String? value) {
-                setState(() {
-                  radio1 = value!;
-                });
-              },
-            ),
-            const Text('Churrasco'),
-
-
-            Radio<String>(
-              value: 'Cinema',
+              value: '',
               groupValue: radio2,
               onChanged: (String? value) {
                 setState(() {
@@ -127,13 +128,9 @@ class _MyCustomFormState extends State<MyCustomForm> {
               },
             ),
             const Text('Cinema'),
-
-          ],          
+          ],
         ),
         const SizedBox(height: 20),
-
-        
-
 
 
         ElevatedButton(
@@ -142,10 +139,6 @@ class _MyCustomFormState extends State<MyCustomForm> {
           },
           child: const Text('Enviar'),
         ),
-
-
-
-
       ],
     );
   }
