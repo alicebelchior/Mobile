@@ -34,9 +34,9 @@ void main(){
 	competidor1.peso=50.2;
 	competidor1.forca=80;  
 	competidor1.velocidade=20.3;  
-  competidor1.energia=100;
-  competidor1.localNascim="Vale da Nebulosa";
-  competidor1.nacionalidade="Elfa dos Ventos";
+  	competidor1.energia=100;
+  	competidor1.localNascim="Vale da Nebulosa";
+  	competidor1.nacionalidade="Elfa dos Ventos";
 	listaCompetidores.add(competidor1);
 
 	competidor competidor2 = competidor();  
@@ -45,9 +45,9 @@ void main(){
 	competidor2.peso=70.1;
 	competidor2.forca=70;  
 	competidor2.velocidade=90.7;  
-  competidor2.energia=80;
-  competidor2.localNascim="Cidade dos Sussurros";
-  competidor2.nacionalidade="Mago da Sombras";
+  	competidor2.energia=80;
+  	competidor2.localNascim="Cidade dos Sussurros";
+  	competidor2.nacionalidade="Mago da Sombras";
 	listaCompetidores.add(competidor2);
 
 	competidor competidor3 = competidor();   
@@ -56,9 +56,9 @@ void main(){
 	competidor3.peso=85.3;
 	competidor3.forca=90;  
 	competidor3.velocidade=74.6;  
-  competidor3.energia=90;
-  competidor3.localNascim="Montanhas de Gelo Eterno";
-  competidor3.nacionalidade="Guerreiro dos Climas Frios";
+  	competidor3.energia=90;
+  	competidor3.localNascim="Montanhas de Gelo Eterno";
+  	competidor3.nacionalidade="Guerreiro dos Climas Frios";
 	listaCompetidores.add(competidor3);  
 
 	competidor competidor4 = competidor();   
@@ -67,9 +67,9 @@ void main(){
 	competidor4.peso=55.6;
 	competidor4.forca=60;  
 	competidor4.velocidade=88.7;  
-  competidor4.energia=95;
-  competidor4.localNascim="Floresta do Crepúsculo";
-  competidor4.nacionalidade="Guardiã das Chamas";
+  	competidor4.energia=95;
+  	competidor4.localNascim="Floresta do Crepúsculo";
+  	competidor4.nacionalidade="Guardiã das Chamas";
 	listaCompetidores.add(competidor4);  
 
 	competidor competidor5 = competidor();   
@@ -78,9 +78,9 @@ void main(){
 	competidor5.peso=80.8;
 	competidor5.forca=75;  
 	competidor5.velocidade=80.0;  
-  competidor5.energia=85;
-  competidor5.localNascim="Reino das Nuvens Flutuantes";
-  competidor5.nacionalidade="Explorador dos Céus";
+  	competidor5.energia=85;
+ 	competidor5.localNascim="Reino das Nuvens Flutuantes";
+  	competidor5.nacionalidade="Explorador dos Céus";
 	listaCompetidores.add(competidor5);
 
 	for(int contaIndice=0; contaIndice<listaCompetidores.length; contaIndice++)
