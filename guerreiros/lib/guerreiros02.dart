@@ -21,8 +21,7 @@ class competidor {
 }
 
 void main() {
-  int indice = 0;
-
+  
   List<competidor> listaCompetidores = [];
 
   competidor competidor1 = competidor();
