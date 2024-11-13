@@ -63,6 +63,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
               dropdownValue = newValue!;
             });
           },
+          
           items: <String>['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4']
               .map<DropdownMenuItem<String>>((String value) {
             return DropdownMenuItem<String>(
